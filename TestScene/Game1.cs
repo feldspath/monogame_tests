@@ -52,9 +52,10 @@ namespace TestScene
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            // CHANGE CONTROLS HERE
             // Player movement
             Vector3 direction = Vector3.Zero;
-            if (Keyboard.GetState().IsKeyDown(Keys.Q))
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
             {
                 direction.X -= 1f;
             }
@@ -62,7 +63,7 @@ namespace TestScene
             {
                 direction.X += 1f;
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.Z))
+            if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 direction.Z -= 1f;
             }
